@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
 </head>
 
@@ -16,8 +17,8 @@
       <div
         class="w-auto text-center lg:order-2 lg:w-1/5 flex items-center justify-center lg:justify-star lg:text-center lg:mr-14 ">
         <img src="images/logo.png" alt="">
-        <a class="text-xl font-semibold text-white font-heading ml-2" href="#">
-          Charlie Rabiller
+        <a class="text-xl font-semibold text-white font-heading ml-1 " href="#">
+          Fruit Burst
       </div>
 
 
@@ -163,7 +164,37 @@
   </header>
   <main>
 <!-- this is card section -->
-    <div class="flex justify-center w-[69%] gap-10 mt-80 ml-60">
+<div class="flex mt-60 ml-60 mr-60">
+  <div class="w-1/2">
+    <h1 class="text-2xl font-bold text-black">Deal of the day</h1>
+    <p class="mt-2 text-black">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+
+  <div class="w-1/2 flex justify-end text-black ">
+    <div class="text-right">
+      <div class="text-xl font-bold">Time</div>
+      <div class="flex mt-2">
+        <div class="mr-2">
+          <span class="font-bold">Day:</span>
+          <span>10</span>
+        </div>
+        <div class="mr-2">
+          <span class="font-bold">Hours:</span>
+          <span>12</span>
+        </div>
+        <div class="mr-2">
+          <span class="font-bold">Minutes:</span>
+          <span>30</span>
+        </div>
+        <div>
+          <span class="font-bold">Seconds:</span>
+          <span>45</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="flex  justify-center w-[69%] gap-10 mt-24 ml-60">
       <div class="card w-96 bg-base-100 shadow-xl">
         <figure class="px-10 pt-10">
           <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -357,10 +388,10 @@
         <div class="relative">
           <img src="images/banner1.png" class="blur-[2px]" />
           <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-            <h1 class="text-2xl font-semibold text-center text-white capitalize lg:text-3xl dark:text-white">Our Executive Team</h1>
+            <h1 class="text-2xl font-semibold text-center text-white capitalize lg:text-3xl dark:text-white">Meet the team section</h1>
 
             <p class="max-w-2xl mx-auto my-6 text-center text-white dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+              Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
             </p>
             <div class="flex justify-center  gap-28 ml-auto mr-auto">
               <div class="max-w-xs mx-auto  rounded-lg ">
@@ -467,13 +498,13 @@
 <!-- why u choose us -->
 
 
-  <section class="bg-white dark:bg-gray-900">
-    <div class="container px-6 py-12 mx-auto >
-      <!-- there will be a header and paragraph in center -->
+  <section class="bg-white dark:bg-gray-900 mb-24 mt-24">
+    <div class="container px-6 py-12 ml-[35%] >
+     
       <div class=" mb-12">
-        <h1 class="text-3xl font-semibold text-gray-800 dark:text-white">Why Choose Us</h1>
-        <p class="mt-4 text-gray-600 dark:text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+        <h1 class="text-3xl font-semibold text-gray-800 dark:text-white pl-20">Why Choose Us</h1>
+        <p class="mt-4 text-gray-600 dark:text-gray-400 w-[30%]">
+          Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old..
         </p>
       </div>
 
@@ -517,12 +548,36 @@
     </div>
 </section>
 
-
-
-
-
   </main>
-  <footer></footer>
+<footer>
+  <section class="flex justify-center items-center mb-20">
+    <div class="flex flex-col justify-center items-center ">
+      <div class="flex items-center">
+        <img src="images/logo.png" alt="logo" />
+        <h3 class="text-center ml-2">Fruit Burst</h3>
+      </div>
+  
+      <ul class="my-4 flex">
+        <li class="mr-4">Menu</li>
+        <li class="mr-4">Home</li>
+        <li class="mr-4">Shop</li>
+        <li class="mr-4">All Fruits</li>
+   
+      </ul>
+  
+      <ul class="flex">
+        <li class="mr-4"><i class="fab fa-twitter"></i></li>
+        <li class="mr-4"><i class="fab fa-facebook"></i></li>
+        <li class="mr-4"><i class="fab fa-youtube"></i></li>
+        <li class="mr-4"><i class="fab fa-linkedin-in"></i></li>
+        <li class="mr-4"><i class="fab fa-instagram"></i></li>
+        <li class="mr-4"><i class="fab fa-apple"></i></li>
+      </ul>
+    </div>
+  </section>
+</footer>
+
+
 </body>
 
 </html>
