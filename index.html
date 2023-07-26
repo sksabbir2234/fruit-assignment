@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="st.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,7 +16,7 @@
 <body>
   <header>
     <!-- NavBar section -->
-    <nav class="flex flex-wrap items-center justify-between p-4 bg-red-500 rounded-lg  sm:mx-2  mt-5 lg:mx-60">
+    <nav class="flex flex-wrap items-center justify-between p-4 bg-red-500 rounded-lg  sm:mx-2  mt-5 lg:mx-60 ">
       <div
         class="w-auto text-center lg:order-2 lg:w-1/5 flex items-center justify-center lg:justify-start lg:text-center lg:mr-14">
         <img src="images/logo.png" alt="">
@@ -163,15 +164,15 @@
   </header>
   <main>
     <!-- this is card section w-[69%]  -->
-    <section class="lg:w-[69%] lg:ml-60  ">
-      <div class="flex justify-between items-center flex-row mt-40 px-4  ">
+    <section class="lg:w-[69%] lg:ml-60 sm:mb-7   ">
+      <div class="flex justify-between items-center flex-col lg:flex-row mt-40 px-4  ">
         <div class="w-1/2 mb-8">
           <h1 class="text-2xl font-bold text-black text-center sm:text-left">Deal of the day</h1>
           <p class="mt-2 text-black text-center sm:text-left ">Contrary to popular belief, is not simply random text. It
             has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
-        <div class="w-1/2 flex  text-black">
+        <div class="w-1/2 flex -ml-64  text-black">
           <div class="text-start ml-40">
             <div class="text-xl font-bold">Time</div>
             <div class="flex mt-2">
@@ -195,7 +196,7 @@
           </div>
         </div>
       </div>
-      <div class="flex  sm:items-center">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
         <div class="card bg-base-100 shadow-xl w-80 lg:w-96 ">
           <figure class="px-5 pt-5">
             <img src="images/fruit6.png" alt="Shoes" class="rounded-xl w-[15%] lg:w-[25%]" />
@@ -377,24 +378,27 @@
 
 
     <!-- this is team section w-[69%] -->
-    <section class="">
-      <div class="relative mt-14 mx-4 lg:ml-60 lg:mr-60">
-        <div class="relative w-full">
-          <div class="relative">
-            <img src="images/banner1.png" class="blur-[2px]" />
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-              <h1 class="text-2xl font-semibold text-center text-white capitalize lg:text-3xl dark:text-white">Meet the
-                team section</h1>
-    
-              <p class="max-w-2xl mx-auto my-6 text-center text-white dark:text-gray-300">
-                Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
-                literature from 45 BC, making it over 2000 years old.
-              </p>
-    
+    <section class=" sm:mb-7 ">
+      <div class="mt-14 mx-4 lg:ml-60 lg:mr-60">
+        <div class="w-full">
+          <div class="">
+            <!-- <img src="images/banner1.png" class="blur-[2px] h-screen lg:h-full" /> -->
+            <!-- <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center "> -->
+            <div class="text-white text-center bg-no-repeat bg-cover bg-center bg-[url('images/banner1.png')]">
+              <div class="pt-5">
+                <h1 class="text-2xl font-semibold text-center text-white capitalize lg:text-3xl dark:text-white">Meet the
+                  team section</h1>
+                <p class="max-w-2xl mx-auto my-6 text-center text-white dark:text-gray-300">
+                  Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                  literature from 45 BC, making it over 2000 years old.
+                </p>
+              </div>
+
+
               <!-- Team Member Cards Container -->
-              <div class="flex flex-col md:flex-row justify-center gap-2 lg:justify-center lg:gap-28 mx-auto">
+              <div class="flex flex-col md:flex-row justify-center gap-1 lg:justify-center lg:gap-16 mx-auto">
                 <!-- Team Member Card (Repeat for each member) -->
-                <div class="max-w-xs mx-auto rounded-lg  dark:bg-gray-900 p-4">
+                <div class="max-w-xs mx-auto rounded-lg  dark:bg-gray-900 p-2">
                   <img src="images/member1.png" alt="Profile Image" class="rounded-full  mx-auto mt-4">
                   <h4 class="text-center  text-white dark:text-white  mt-4 text-xs ">Awlad Hossain</h4>
                   <p class="text-center text-white dark:text-white  text-xs">Food Expert</p>
@@ -404,7 +408,7 @@
                     <i class="fa-brands fa-linkedin"></i>
                   </div>
                 </div>
-                <div class="max-w-xs mx-auto rounded-lg  dark:bg-gray-900 p-4">
+                <div class="max-w-xs mx-auto rounded-lg  dark:bg-gray-900 pl-2">
                   <img src="images/member2.png" alt="Profile Image" class="rounded-full  mx-auto mt-4">
                   <h4 class="text-center  text-white dark:text-white mt-4 text-xs">Awlad Hossain</h4>
                   <p class="text-center text-white dark:text-white  text-xs">Food Expert</p>
@@ -414,7 +418,7 @@
                     <i class="fa-brands fa-linkedin"></i>
                   </div>
                 </div>
-                <div class="max-w-xs mx-auto rounded-lg  dark:bg-gray-900 p-4">
+                <div class="max-w-xs mx-auto rounded-lg  dark:bg-gray-900 pl-2">
                   <img src="images/member3.png" alt="Profile Image" class="rounded-full  mx-auto mt-4">
                   <h4 class="text-center  text-white dark:text-white  mt-4 text-xs">Awlad Hossain</h4>
                   <p class="text-center text-white dark:text-white  text-xs">Food Expert</p>
@@ -424,7 +428,7 @@
                     <i class="fa-brands fa-linkedin"></i>
                   </div>
                 </div>
-                <div class="max-w-xs mx-auto rounded-lg  dark:bg-gray-900 p-4">
+                <div class="max-w-xs mx-auto rounded-lg  dark:bg-gray-900 pl-2">
                   <img src="images/member4.png" alt="Profile Image" class="rounded-full  mx-auto mt-4">
                   <h4 class="text-center  text-white dark:text-white  mt-4 text-xs">Awlad Hossain</h4>
                   <p class="text-center text-white dark:text-white  text-xs">Food Expert</p>
@@ -434,19 +438,19 @@
                     <i class="fa-brands fa-linkedin"></i>
                   </div>
                 </div>
-           
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
+
     <!-- why u choose us -->
 
-    <section class="bg-white dark:bg-gray-900 mb-8 md:mb-24 mt-8 md:mt-24 w-[69%] ml-64">
+    <section class="bg-white dark:bg-gray-900 mb-8 md:mb-24 mt-8 md:mt-24 lg:w-[69%] lg:ml-64">
       <div class="container px-4 md:px-6 py-8 md:py-12">
-        <div class="mb-8 ml-80 md:mb-12">
+        <div class="lg:mb-8 lg:ml-80  ">
           <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-white md:pl-20">Why Choose Us</h1>
           <p class="mt-4 text-gray-600 dark:text-gray-400 md:w-[60%] md:pl-20">
             Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature
@@ -506,7 +510,7 @@
 
   </main>
   <footer>
-    <section class="flex justify-center items-center mb-20">
+    <section class="flex justify-center items-center mb-20 bg-black">
       <div class="flex flex-col justify-center items-center ">
         <div class="flex items-center">
           <img src="images/logo.png" alt="logo" />
